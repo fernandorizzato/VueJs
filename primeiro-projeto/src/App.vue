@@ -1,17 +1,17 @@
 <template>
   <div id="app">
-    <TesteFor/>
+    <TesteEvento/>
   </div>
 </template>
 
 
 <script>
-import TesteFor from './components/TesteFor.vue'
+import TesteEvento from './components/TesteEvento.vue'
 
 export default {
   name: 'App',
   components: {
-    TesteFor
+    TesteEvento
   }
 }
 </script>
