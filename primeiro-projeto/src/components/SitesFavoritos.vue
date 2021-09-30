@@ -14,26 +14,17 @@ export default {
   name: "SitesFavoritos",
   data() {
     return {
-      sitesFavoritos: [
-        {
-          id: 1,
-        nome: 'Google',
-        link: 'https://google.com'
-        },
-        {
-          id: 2,
-        nome: 'Youtube',
-        link: 'https://youtube.com'
-        },
-        {
-          id:3,
-        nome: 'Github',
-        link: 'https://Github.com'
-        }
-      ]
-    } 
+      sitesFavoritos: []
+    }
+  },
+  created() {
+    fetch('https://hackthon-decola.firebaseio.com/sites-favoritos.json')
+      .then(resultado => resultado.json())
+      .then(json => {
+          this.sitesFavoritos = json;
+      });
   }
-};
+}
 </script>
 
 <style scoped>
