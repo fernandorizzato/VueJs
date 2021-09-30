@@ -16,6 +16,7 @@ export default {
   },
   methods: {
       deixarMaiuscula () {
+          const abc = "Olá, mundo!"
           this.mensagem = this.mensagem.toUpperCase();
       }
   }
@@ -23,4 +24,5 @@ export default {
 </script>
 
 <style scoped>
+
 </style>
