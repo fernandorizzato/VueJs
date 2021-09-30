@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  name: "testeif",
+  name: "TesteIf",
   data() {
     return {
       podeVer: false,
